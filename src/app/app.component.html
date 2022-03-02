@@ -17,6 +17,9 @@
     <div class="col-xs-12">
       <p appBasicHighlight>copy right string! </p>  
       <p [appBetterHighlighter]="'green'" defaultColor="orange" > better highlighter</p>
-    </div>    
+    </div>
+    <p *appUnless="onlyOdd" [appBetterHighlighter]="'#a1a1a1'">
+      this is using appUnless directive
+    </p>    
   </div>
 </div>
